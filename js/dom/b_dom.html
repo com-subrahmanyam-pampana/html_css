@@ -1,0 +1,15 @@
+
+<!-- A script canot access an DOM element 
+that doesn't exit at moment of runnning -->
+<html>
+    <head>
+        <script>
+          console.log("Calling from head :",document.body) // prints null
+        </script>
+    </head>
+<body>
+    <script>
+          console.log("Calling from body :" ,document.body)
+    </script>
+</body>
+</html>
