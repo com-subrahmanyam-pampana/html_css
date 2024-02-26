@@ -1,0 +1,17 @@
+<!-- 
+The inner HTML property allow to get the HTML inside the element 
+as string -->
+<html>
+<body>
+    <div>
+        <p>Test</p>
+    </div>
+    <script>
+      console.log(document.body.innerHTML)
+      setTimeout(()=>{
+        document.body.innerHTML='New Body'
+        console.log(document.body.innerHTML)
+      },4000)
+    </script>
+</body>
+</html>

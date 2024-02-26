@@ -1,0 +1,17 @@
+<!-- You can add an event usign the dom property -->
+<html>
+<body>
+    <input id="my_input" type="button" value="Clicked ">
+    <script>
+        const handler1=()=>{
+         console.log("Handler 1")
+        }
+
+        const handler2=()=>{
+         console.log("Handler 2")
+        }
+       my_input.addEventListner("click",handler1);
+       my_input.addEventListner("click",handler1);
+    </script>
+</body>
+</html>
