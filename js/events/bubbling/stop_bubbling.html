@@ -1,0 +1,17 @@
+
+<!-- 
+1.A bubbling event goes from the target element straight up. 
+Normally it goes upwards till <html>, and then to document
+object, and some events even reach window, calling all 
+handlers on the path.
+
+2.But any handler may decide that the event has been fully 
+processed and stop the bubbling.
+
+3.The method for it is event.stopPropagation().
+-->
+<html>
+    <body onclick="alert(`the bubbling doesn't reach here`)">
+        <button onclick="event.stopPropagation()">Click me</button>
+      </body>
+</html>

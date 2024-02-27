@@ -1,0 +1,15 @@
+<!-- You can add an event usign the dom property -->
+<html>
+<body>
+      <form id="myform">FORM
+        <div id="my_div">DIV
+          <p id="my_para">Paragraph</p>
+        </div>
+      </form>
+      <script>
+        myform.onclick=(event)=>{
+            console.log(event.target.tagName)
+        }
+    </script>
+</body>
+</html>
