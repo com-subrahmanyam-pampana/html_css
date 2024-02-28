@@ -1,0 +1,29 @@
+<!-- Instead of adding an event listener to each and every 
+similar element, we can add an event listener to a parent 
+element and call an event on a particular target using the 
+.target property of the event object. -->
+<html>
+
+<body>
+    <div id="my_div">
+       
+        <p></p>
+        <span>
+            <div>
+                <button >Click Me!</button>
+            </div>
+        </span>
+    </div>
+
+    <script>
+        const div = document.getElementById("my_div")
+        div.addEventListener("click", (event) => {
+        if(event.target.tagName === 'BUTTON') {
+        console.log("button was clicked")
+        }
+        })
+
+    </script>
+</body>
+
+</html>

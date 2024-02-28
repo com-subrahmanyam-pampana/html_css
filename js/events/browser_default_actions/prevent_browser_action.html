@@ -1,0 +1,8 @@
+<!-- In this HTML, a click on a link doesn’t lead to navigation; the browser doesn’t do anything: -->
+<html>
+<body>
+  <a href="/" onclick="return false">Click here</a>
+  or
+  <a href="/" onclick="event.preventDefault()">here</a>
+</body>
+</html>
