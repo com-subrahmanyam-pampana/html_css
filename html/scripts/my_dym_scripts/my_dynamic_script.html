@@ -1,15 +1,16 @@
+<html>
+<body>
+    <script>
+        let script = document.createElement('script');
+        script.src = "./test.js";
+        document.body.append(script); // (*)
+        script.onload=()=>{
+            console.log("Script loaded....")
+        }
 
- <html>
-   
- <body>
-    
- 
-     <script>
-      let script = document.createElement('script');
-script.src = "/article/script-async-defer/long.js";
-document.body.append(script); // (*)
-     </script>
-     
-    
- </body>
- </html>
+        script.onerror=()=>{
+            console.log("Script failed to load....")
+        }
+    </script>
+</body>
+</html>
