@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <style>
+        /* This will make first latter of th epara  red in color */
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+       /* This will insert semicolon after every h1 tag element */
+        h1::after {
+            content: ";";
+        }
+        /* This will insert * before every h3 tag element */
+        h3::before {
+            content: "*";
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is test para</p>
+    <h1>This is test para</h1>
+    <p>This is test para2</p>
+    <h1>This is test para2</h1>
+    <h3>This is a h3</h3>
+</body>
+
+</html>
