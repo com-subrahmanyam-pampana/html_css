@@ -1,0 +1,27 @@
+<!-- The general sibling selector selects 
+all elements that are next siblings of a specified element. -->
+
+<html>
+<head>
+    <style>
+        /* selects all <p> elements that are next siblings of <div> elements */
+        div~p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is a heading 1</h2>
+    <p>This is a para 1</p>
+    <div>
+        <h2>This is a heading 2 inside the div</h2>
+        <p>This is a para 1 inside the div</p>
+    </div>
+    <p>This is a para 3 after the div</p>
+    <h2>This is a heading 3 after  the div</h2>
+    <p>This is a para 4 after the div</p>
+
+</body>
+
+</html>

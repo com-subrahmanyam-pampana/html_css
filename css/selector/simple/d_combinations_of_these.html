@@ -1,0 +1,38 @@
+<!-- 
+You can also specify that only specific HTML 
+elements should be affected by a class. -->
+
+<html>
+    <head>
+     <style>
+         /*This propery apply to all the elements of vegitables class*/
+        .vegitables{
+            font-family:'Courier New', Courier, monospace
+        }
+        /*This propery apply to all the elements of fruits class*/
+        .fruits{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        /*This propery apply to only p elements of   vegitables class*/
+        p.vegitables{
+            color: aliceblue;
+        }
+         /*This propery apply to only p elements of   fruits class*/
+        p.fruits{
+            color:aqua;
+        }
+         /*This propery apply to all p elements of   all class*/
+        p{
+          text-align: center;
+        }
+     </style>
+    </head>
+    <body>
+       <h1 class="fruits">Fruits</h1>
+       <p  class="fruits">Apple</p>
+       <p  class="fruits">Bananna</p>
+       <h1 class="vegitables">Vegitables</h1>
+       <p  class="fruits">Onion</p>
+       <p  class="fruits">Potato</p>
+    </body>
+</html>
