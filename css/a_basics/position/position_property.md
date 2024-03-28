@@ -2,7 +2,7 @@ The position property specifies the type of positioning method used for an eleme
 
 There are five different position values:
 
-    static
+    static 
     relative
     fixed
     absolute

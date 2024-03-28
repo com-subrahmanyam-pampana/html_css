@@ -1,0 +1,44 @@
+<!-- 
+1.An element with position: absolute; is positioned relative to the 
+nearest positioned ancestor (instead of positioned relative 
+to the viewport, like fixed).
+
+2.However; if an absolute positioned element has no positioned ancestors, 
+it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, 
+and can overlap elements. -->
+<html>
+
+<head>
+    <style>
+        div.main-content {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+        /*This position is absolute 
+        It takes the parent div as reference.
+        */
+        div.main-content-2 {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is the heading</h2>
+    <p>This is a para</p>
+    <div class="main-content">
+        This div element has position: relative;
+        <div class="main-content-2">
+            This div element has position: absolute;
+        </div>
+    </div>
+</body>
+
+</html>
