@@ -1,0 +1,45 @@
+
+<!-- The @keyframes Rule
+
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+
+To get an animation to work, you must bind the animation to an element. -->
+
+<html>
+
+<head>
+    <style>
+        /* The following example binds the "myanimation" animation to the <div> element. 
+            The animation will last for 4 seconds, and it will gradually change 
+            the background-color of the <div> element from "red" to "yellow": */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: myanimation; /**/
+            animation-duration: 4s;
+        }
+
+        @keyframes myanimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div></div>
+
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+
+</html>
